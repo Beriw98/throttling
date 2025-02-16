@@ -20,6 +20,11 @@ go test ./tests/server
 They will verify the server logic and the rate-limiting functionality.
 They should take around 1.5 minutes to complete.
 
+
+For testing the rate limiter independently, run the following command:
+```bash
+go test ./limiter
+```
 ### Test Cases
 1. Test the server with a single connection and per-connection limit.
 2. Test the server with multiple connections and global limit.
